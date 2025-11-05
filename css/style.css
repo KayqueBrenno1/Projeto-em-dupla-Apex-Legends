@@ -63,17 +63,18 @@ header{
 main{
     display: flex;
     align-items: center;
-
     width: 100vw;
     height: 100vh;
 }
 .main-left{
     display: flex;
     flex-direction: column;
-
+    gap: 30px;
+    width: 861px;
+    height: 423.76px;
 }
 .main-left p{
-    font-size: 20px;
+    font-size: 26px;
 }
 p{
     font-family: Oxanium, sans-serif;
