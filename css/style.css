@@ -1,12 +1,12 @@
 :root{
-    --header-color: #161616;
-    --header-secundary-color: #000000;
-    --color: #C83C35;
+    --primary-color: #C83C35;
 }
+
 body{
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    font-family: Oxanium;
 }
 .cenario{
     width: 100vw;
@@ -15,75 +15,161 @@ body{
     z-index: -999;
 }
 header{
-
-}
-.header-top{
-    height: 40px;
-    width: 1,920px;
-    background-color: var(--header-color);
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
-    gap: 30px;
 }
-.header-center{
+.header{
     display: flex;
-    justify-content: center;
+    background-color: #161616;
+    height: 42px;
+    width: 100%;
+    justify-content: flex-end;  
+    align-items: center;
+    gap: 20px;
+}
 
+.EA{
+    padding-right: 40px;
 }
 .menu{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 1675px;
     height: 81.5px;
-    background-color: var(--header-secundary-color);
+    background-image: url(/img/BackgroundHeader.svg);
+    color: white;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    transform: translate(0,-5px);
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 40px;
 }
-.botao{
+.download{
     display: flex;
     align-items: center;
-}
-.botao-download{
-    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
     width: 233px;
     height: 48px;
-    background-color: var(--color);
-    justify-content: center;
-    align-items: center;
-}
-.menu p{
-    font-size: 18px;
-    font-weight: 600;
-}
-.logo-menu{
-    margin-left: 50px;
-    width: 69.83px;
-    height: 44.95px;
 }
 main{
     display: flex;
+    justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
-}
-.main-left{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 861px;
-    height: 423.76px;
-}
-.main-left p{
-    font-size: 26px;
-}
-p{
-    font-family: Oxanium, sans-serif;
+    max-height: 100vh;
+    max-width: 100vw;
     color: white;
 }
-.ea{
-    padding-right: 40px;
+.container-jogar{
+    height: 423.76px;
+    width: 861px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
-.logo-main{
-    width: 327.21px;
-    height: 210.76px;
+.informacao-do-jogo{
+    font-size: 25px;
+}
+.botoes{
+    display: flex;
+    gap: 24px;
+}
+.container-play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 281px;
+    height: 71px;
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    border: 1px solid rgb(211, 211, 211);
+    gap: 100px;
+}
+.container-play::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #f24c00;
+}
+.elementos-internos-play{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    top: 1px; /* ajusta para alinhar a barra branca */
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 15px;
+}
+.elementos-internos-play img {
+    margin-left: 40px;
+    display: flex;
+    width: 120px;
+    height: auto;
+
+}
+.titulo-play{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+    width: 200px;
+}
+.container-assistir-trailer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 281px;
+    height: 71px;
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    border: 1px solid rgb(211, 211, 211);
+    gap: 100px;
+}
+.container-assistir-trailer::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #f24c00;
+}
+.elementos-internos-trailer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    top: 1px; /* ajusta para alinhar a barra branca */
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 15px;
+}
+.elementos-internos-trailer img {
+    margin-left: 55px;
+    display: flex;
+    width: 120px;
+    height: auto;
+}
+.titulo-trailer{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 23px;
+    width: 250px;
+}
+.personagem img{
+    transform: translate(0,50px);
+    width: 875px;
+    height: 906px;
 }
