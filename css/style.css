@@ -161,9 +161,10 @@ main{
     width: 120px;
     height: auto;
 }
-.titulo-trailer{
+.botao-trailer{
     display: flex;
     align-items: center;
+    justify-content: center;
     font-weight: bold;
     font-size: 23px;
     width: 250px;
